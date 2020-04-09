@@ -1,0 +1,15 @@
+/* Import Font Awesome icons:
+    https://fontawesome.com/
+*/
+@import "@fortawesome/fontawesome-free/css/all.css";
+/* Import checkbox styles with pretty-checkbox:
+    https://github.com/lokesh-coder/pretty-checkbox
+*/
+@import "animate.css/animate";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./components/_all";
+
