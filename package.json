@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build:app": "react-scripts build",
-    "build:styles": "npx postcss src/assets/styles/App.css -o public/app.css",
-    "build": "npm run build:app && npm run build:styles",
-    "start": "npm run build:styles && react-scripts start",
+    "build:css": "npx postcss src/assets/styles/App.css -o src/App.css",
+    "build": "npm run build:css && react-scripts build",
+    "start": "npm run build:css && react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,21 +25,23 @@
     ]
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "animate.css": "^3.7.2",
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
+    "react": "^16.13.1",
+    "react-animejs": "^0.5.4",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
     "tailwindcss": "^1.2.0",
     "tailwindcss-filters": "^3.0.0",
-    "tailwindcss-transitions": "^2.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "tailwindcss-transitions": "^2.2.0"
   }
 }
